@@ -3,34 +3,33 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding-top: 92px;
-  padding-left: 24px;
-  padding-bottom: 92px;
   padding-right: 24px;
+  padding-bottom: 92px;
+  padding-left: 24px;
 }
 
 .header_menu {
   display: flex;
   justify-self: center;
-
 }
 
 .menu_links {
   display: flex;
   gap: 32px;
-  list-style-type: circle;
   padding-right: 7px;
+  list-style-type: circle;
 }
 
 .link_list {
-  font-size: 18px;
   font-weight: 400;
-  text-underline-offset: 4px; 
+  font-size: 18px;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .main_link_marker {
-  list-style-type: none; 
   text-decoration: none;
+  list-style-type: none;
 }
 
 .link_main {
@@ -44,50 +43,49 @@
 
 .address {
   padding-left: 185px;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.18px;
-  font-family: "Raleway", sans-serif;
   list-style-type: none;
-  font-style: normal;  
 }
-
 
 .cover {
   position: relative;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
+  z-index: 0;
   color: white;
   text-transform: uppercase;
-  z-index: 0;
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
+  position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.cover_title { 
+.cover_title {
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding: 165px 50px 147px;
-  gap: 20px;   
-} 
- 
-.cover_title span { 
-  font-size: 100px; 
-  font-weight: 700;  
-  line-height: 100%;  
+}
+
+.cover_title span {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
 }
 
 .text_cover {
@@ -96,40 +94,40 @@
 }
 
 .text_center {
-  text-align: center;
-  line-height: 125px;
   padding-left: 60px;
+  line-height: 125px;
+  text-align: center;
 }
 
 .text_right {
+  padding-right: 30px;
+  line-height: 125px;
   text-align: right;
-  line-height: 125px; 
-  padding-right: 30px; 
 }
 
-.text_cover { 
+.text_cover {
   letter-spacing: 30px;
 }
 
 .text_cover .no_letter_spacing {
-  letter-spacing: 0px; 
+  letter-spacing: 0px;
 }
 
 .text_cover .letter_spacing {
-  letter-spacing: 60px; 
+  letter-spacing: 60px;
 }
 
 .cover_description {
   display: flex;
-  align-items: baseline;
   justify-content: space-evenly;
-  padding: 0px 50px 55px 78px;
+  align-items: baseline;
   gap: 79px;
+  padding: 0px 50px 55px 78px;
 }
 
 .cover_text {
-  font-size: 22px;
   font-weight: 400;
+  font-size: 22px;
   line-height: 28px;
   word-spacing: 18px;
 }
@@ -138,13 +136,13 @@
   width: 256px;
   height: 51px;
   border: 1px solid white;
-  background-color: transparent;
-  font-family: "Raleway", sans-serif;
   color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   font-size: 22px;
   line-height: 51px;
-  font-weight: 500;
   text-align: center;
+  background-color: transparent;
 }
 
 .title_lots {
@@ -152,43 +150,43 @@
   padding-bottom: 26px;
   padding-left: 64px;
   color: #000;
-  font-size: 40px;
   font-weight: 700;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 .container_lots {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  gap: 25px;
   justify-content: flex-start;
-  padding: 0; 
+  gap: 25px;
   margin: 0 auto;
   margin-left: 20px;
+  padding: 0;
+  list-style-type: none;
 }
 
-.card_lots a { 
+.card_lots a {
   text-decoration: none;
 }
 
 .card_lots {
+  flex-grow: 1;
   max-width: 334px;
   min-height: 563px;
-  flex-grow: 1;
 }
 
 .card {
   position: relative;
-  height: 100%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  z-index: 1;
-  padding: 51px 40px 48px;
   justify-content: space-between;
-  background-size: cover;
+  height: 100%;
+  padding: 51px 40px 48px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .card_about_cinema {
@@ -205,33 +203,34 @@
 
 .card_title {
   color: white;
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
 
-.link_lots { 
+.link_lots {
   text-decoration: none;
 }
+
 .text_on_card {
   color: white;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 120%; 
+  line-height: 120%;
 }
 
 .view_more {
   display: block;
-  text-underline-offset: 3px;
+  margin-left: 64px;
   padding-top: 30px;
   color: black;
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 23.48px;
-  margin-left: 64px;
+  text-underline-offset: 3px;
 }
 
 .about {
@@ -246,14 +245,14 @@
 }
 
 .about_logo {
-  justify-self: center;
-  background-color: #000;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
   display: flex;
+  justify-self: center;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about_logo_image {
@@ -270,17 +269,17 @@
 
 .title_about {
   color: black;
-  font-size: 40px;
   font-weight: 700;
+  font-size: 40px;
   line-height: 46.96px;
 }
 
 .about_text {
   align-self: flex-start;
-  font-family: "Raleway", sans-serif;
   color: black;
-  font-size: 20px;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -295,14 +294,14 @@
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  padding: 180px 50px 88px;
-  gap: 140px;
   align-items: flex-start;
+  gap: 140px;
+  padding: 180px 50px 88px;
 }
 
 .footer_address {
+  padding-left: 0px;
   font-style: normal;
-  padding-left: 0px; 
 }
 
 .footer_menu {
@@ -310,16 +309,16 @@
 }
 
 .footer_menu_links {
-  list-style-type: none;
   text-underline-offset: 3px;
+  list-style-type: none;
 }
 
 .footer_links {
   color: black;
-  text-align: center;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: normal;
+  text-align: center;
 }
 
 .footer_main {
@@ -334,4 +333,56 @@
 .footer_images {
   display: flex;
   gap: 48px;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 92px 50px;
+  }
+  
+  .address {
+    padding-left: 0;
+    text-align: right;
+  }
+  
+  .container_lots {
+    justify-content: center;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+  
+  .card_lots {
+    max-width: 300px;
+    min-height: 500px;
+  }
+  
+  .card {
+    padding: 40px 20px;
+    min-height: 450px;
+  }
+  
+  .about_container {
+    grid-template-columns: 1fr;
+    padding: 34px 50px 0;
+    gap: 40px;
+  }
+  
+  .about_content {
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  .title_about {
+    margin: 0;
+  }
+  
+  .footer {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 60px;
+    padding: 180px 50px 88px;
+  }
+  
+  .footer_menu {
+    padding-left: 0;
+  }
 }
