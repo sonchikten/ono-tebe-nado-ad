@@ -1,1 +1,0 @@
-https://github.com/sonchikten/ono-tebe-nado-ad
